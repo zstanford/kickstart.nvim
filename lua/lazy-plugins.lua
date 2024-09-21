@@ -18,10 +18,6 @@ require('lazy').setup({
   -- keys can be used to configure plugin behavior/loading/etc.
   --
   -- Use `opts = {}` to force a plugin to be loaded.
-  --
-
-  -- modular approach: using `require 'path/name'` will
-  -- include a plugin definition from file lua/path/name.lua
 
   require 'kickstart/plugins/gitsigns',
   require 'kickstart/plugins/which-key',
@@ -42,6 +38,8 @@ require('lazy').setup({
   require 'kickstart/plugins/surround',
   require 'kickstart/plugins/harpoon',
   require 'kickstart/plugins/sonokai',
+  require 'kickstart/plugins/context',
+  require 'kickstart/plugins/leetcode',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -70,5 +68,3 @@ require('lazy').setup({
     },
   },
 })
-
--- vim: ts=2 sts=2 sw=2 et
